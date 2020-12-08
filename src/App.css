@@ -1,0 +1,104 @@
+.imageFps,
+.imageMoba,
+.imageMobile,
+.imageNintendo {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  margin-left: 40px;
+  margin-right: 50px;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+.Logo {
+  position: absolute;
+  z-index: 0;
+  width: 160px;
+  height: 160px;
+  left: 42%;
+  top: 110%;
+}
+
+.imageFps:hover,
+.imageMoba:hover,
+.imageMobile:hover,
+.imageNintendo:hover {
+  opacity: 0.2;
+}
+@media only screen and (min-width: 0px) and (max-width: 1280px) {
+  .ensemble {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  body {
+    background-color: #000911;
+    color: #a5eb97;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    color: #000911;
+    font-weight: bold;
+    background-color: #a1eb97;
+    padding: 0.3rem;
+    border-radius: 3px;
+  }
+
+  .Content {
+    display: table;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .ensemble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .imageFps,
+  .imageMoba,
+  .imageMobile,
+  .imageNintendo {
+    height: 500px;
+  }
+}
+.titre1,
+.titre2 {
+  display: inline-block;
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  font-family: "VT323", sans-serif;
+  font-size: 50px;
+  color: #555;
+  margin-left: -400px;
+}
+.titre3,
+.titre4 {
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+  top: 135%;
+  font-family: "VT323", sans-serif;
+  font-size: 50px;
+  color: #555;
+  margin-left: 180px;
+}

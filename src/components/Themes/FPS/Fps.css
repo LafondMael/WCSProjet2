@@ -1,0 +1,43 @@
+.themesFPS {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 40px;
+  margin: 20px;
+  margin-top: 100px;
+}
+.valorant,
+.COD,
+.overwatch,
+.csGo,
+.fortnite,
+.pubg {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+}
+.imageValo,
+.imageOverwatch,
+.imageCOD,
+.imagefortnite,
+.imagepubg,
+.imageCsGo {
+  height: 80%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.texteThemes {
+  text-align: start;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+}
+.bouttonThemes {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  z-index: 10;
+  justify-content: space-around;
+  align-items: center;
+}

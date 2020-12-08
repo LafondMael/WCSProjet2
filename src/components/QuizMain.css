@@ -1,0 +1,118 @@
+.NextStep {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(0deg, #000, #272727);
+  color: white;
+  left: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.NextStep:before,
+.NextStep:after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.NextStep:after {
+  filter: blur(10px);
+}
+.NextStep {
+  margin-left: 1100px;
+}
+.NextStep[disabled] {
+  display: none;
+}
+
+.finalPage h1 {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #50c878;
+  text-transform: none;
+  text-shadow: none;
+  margin-top: 50px;
+}
+
+.finalPage p {
+  color: #269c4d;
+  text-align: center;
+}
+.imgValo,
+.imgOverwatch,
+.imgCsGo,
+.imgfortnite,
+.imgCOD,
+.imgpubg,
+.imggenshinimpact,
+.imgBattleChasers,
+.imgclashofclans,
+.imgAmongUs,
+.imgboombeach,
+.imglegendsofRuneterra,
+.imgZelda,
+.imgSuperSmash,
+.imgPokemon,
+.imgSuperMario,
+.imgMetroid,
+.imgFire,
+.imgLoL,
+.imgDota2 {
+  width: 90%;
+  height: 400px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.end {
+  border-radius: 400px;
+  width: 280px;
+  height: 280px;
+  margin-top: -80px;
+  margin-right: 700px;
+  margin-left: 40px;
+}
+.end2 {
+  border-radius: 400px;
+  width: 280px;
+  height: 280px;
+  margin-top: -80px;
+}
+.imgtimer {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin-left: 550px;
+}

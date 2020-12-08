@@ -1,0 +1,52 @@
+.RegisterForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: 650px;
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  box-shadow: 0px 3px 5px 1px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: rgba(#f5f5f5);
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.inscrit {
+  color: #555;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+input[id="FirstName"],
+input[id="Pseudo"],
+input[id="Email"],
+input[id="Mdp"] {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0px 2px 3px 1px;
+  border-radius: 5px;
+  width: 250px;
+  height: 25px;
+  border-width: 0.5px;
+}
+
+.Name,
+.Pseudo,
+.Email,
+.Mdp {
+  font-weight: bold;
+  color: grey;
+  font-size: 20px;
+}

@@ -1,0 +1,78 @@
+.SearchForm {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(41, 41, 42, 0.3);
+}
+
+.Title {
+  font-size: 19px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  color: black;
+}
+
+.Choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.bouttonsearch {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  width: 87px;
+  height: 37px;
+  background: linear-gradient(0deg, #555, #272727);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.bouttonsearch:before,
+.bouttonsearch:after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bouttonsearch:after {
+  filter: blur(10px);
+}

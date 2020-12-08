@@ -1,0 +1,91 @@
+* {
+  font-family: "Orbitron", sans-serif;
+}
+.btn {
+  position: relative;
+  width: 70px;
+  height: 35px;
+  background: linear-gradient(0deg, #000, #272727);
+  color: white;
+  left: 20px;
+}
+.btn:before,
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btn:after {
+  filter: blur(10px);
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+.bttn {
+  background-color: #555;
+  margin-left: 10px;
+  color: white;
+}
+
+.buttonplay {
+  display: flex;
+  align-items: baseline;
+  font-size: 18px;
+  color: white;
+  margin-right: 20px;
+}
+.levelshight {
+  background-color: #272727;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.levelslow {
+  background-color: #272727;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.img-header {
+  height: auto;
+}
+.levelscontainer {
+  margin: 10px;
+  color: white;
+  font-size: 12px;
+}

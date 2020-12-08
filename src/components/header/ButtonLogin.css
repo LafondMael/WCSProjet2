@@ -1,0 +1,51 @@
+.boutton {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  width: 100px;
+  height: 38px;
+  background: linear-gradient(0deg, #555, #272727);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.boutton:before,
+.boutton:after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.boutton:after {
+  filter: blur(10px);
+}

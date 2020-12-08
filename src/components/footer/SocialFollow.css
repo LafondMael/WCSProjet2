@@ -1,0 +1,29 @@
+.social-container {
+  display: inline-block;
+  margin-left: 65%;
+  margin-top: -90px;
+  margin-bottom: 20px;
+}
+
+.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+.social:hover {
+  transform: translateY(-4px);
+}
+
+.youtube,
+.facebook,
+.twitter,
+.instagram {
+  color: #555;
+}
+.reseaux {
+  padding: 10px 60px;
+}
+.color {
+  background-color: rgba(41, 41, 42, 0.3);
+}

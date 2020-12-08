@@ -1,0 +1,13 @@
+.Content h1 {
+  margin: 15px 0;
+  color: #272727;
+  text-transform: none;
+  text-shadow: none;
+  text-align: left;
+  margin-top: 0;
+  text-align: center;
+}
+.questions {
+  background-color: rgba(41, 41, 42, 0.2);
+  height: 50px;
+}
